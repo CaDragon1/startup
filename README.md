@@ -46,7 +46,7 @@ would generally work.
     - Google Calendar: POST, GET, DELETE
     - User Profile: GET, PUT, DELETE
 - DB/Login - We should be using MongoDB or something similar to store users, tasks, and notebook data securely in a database. Login required for functionality.
-- WebSocket - Connects to Google Calendar using Google's API to retrieve tasks and create tasks. Displays user's calendar on the home page.
+- WebSocket - Connects to Google Calendar using Google's API to retrieve tasks and create tasks. Displays user's calendar on the home page. Updates statistics when user completes a task.
 
 ## Additional
 
