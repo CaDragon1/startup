@@ -20,11 +20,33 @@ https://ninjamock.com/s/D6J6CLx
 
 ![Mockup of application about page.](/images/About_Mockup.png)
 
+## Key Features
+- User-created list of tasks to accomplish/goals to reach
+- Google Calendar integration with task list
+- Progress report with high score system
+- Notebook functionality to personally keep track of progress
+- Data persistently stored
+- User account system with profile images
+
 ## Design
 Here is a sequence diagram showing how creating a task, completing a task, and making a notebook entry
 would generally work.
+
 ![Sequence Diagram for main functionality](/images/Self_Improvement_Application.png)
 
+## Technologies
+
+- HTML - Four HTML pages. One simple "about" page, one "my account" page, one "notebook" page, and one "home" page with the tasklist. Hyperlinks between pages.
+- CSS - Content is adjusted so that all elements fit on different screens, styled around a clean minimalist aesthetic
+- React - Trying to save tasks will prompt a login/register overlay that will include an option to connect Google Calendar. Relevant elements update upon creation and completion of tasks, changing account information, and notebook entries.
+- Service - Backend service. Endpoints include:
+    - Login, logout, register: POST
+    - Tasks: GET, POST, PUT, DELETE 
+    - Notebook entries: GET, POST, PUT, DELETE 
+    - Google Calendar: POST, GET, DELETE
+    - User Profile: GET, PUT, DELETE
+- DB/Login - We should be using MongoDB or something similar to store users, tasks, and notebook data securely in a database. Login required for functionality.
+- WebSocket - Connects to Google Calendar using Google's API to retrieve tasks and create tasks. Displays user's calendar on the home page.
 
 ## Additional
 
