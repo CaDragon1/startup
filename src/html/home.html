@@ -8,6 +8,8 @@
             <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+
+
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -17,6 +19,42 @@
             </ul>
         </nav>
 
+
+
+        <style>
+            .status-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .status-item {
+                font-size: 1.2em;
+            }
+
+            .goal-list {
+                position: relative;
+                display: block;
+            }
+        </style>
+
+        <div class="status-bar">
+            <div class="status-item" id="tasks">Uncompleted Tasks: 0</div>
+            <div class="status-item" id="score">Score: 0</div>
+        </div>
+
+        <div class="goal-list">
+            <ul>
+                <li>Goal 1    |view info|delete|complete|</li>
+                <li>Goal 2    |view info|delete|complete|</li>
+                <li>Goal 3    |view info|delete|complete|</li>
+                <li>Goal 4    |view info|delete|complete|</li>
+            </ul>
+        </div>
         
     </body>
 </html>
