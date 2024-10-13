@@ -48,6 +48,20 @@ would generally work.
 - DB/Login - We should be using MongoDB or something similar to store users, tasks, and notebook data securely in a database. Login required for functionality.
 - WebSocket - Connects to Google Calendar using Google's API to retrieve tasks and create tasks. Displays user's calendar on the home page. Updates statistics when user completes a task.
 
+
+
+## Initial Implementation
+9/30/2024
+- Pages are set up as follows: 
+    - index.html (Home page)
+    - notebook.html (Journal page)
+    - account.html (Account page)
+    - about.html (About page)
+    Each of these pages contains placeholders for the content they will house.
+- Content is separated into classes for easier css implementation in the future
+- Added deployFiles.sh to assist in deployment
+- My initial plan leaves out the graph of individual progress shown in my elevator pitch. This is to simplify version 1.0.
+
 ## Additional
 
 [Other notes regarding this project](docs/notes.md)
