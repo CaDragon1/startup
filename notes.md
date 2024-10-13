@@ -22,5 +22,8 @@
 - css can target specific areas in html by targeting the class given to segments
 - css animation is done with the @keyframes tag
 
+HTML
+- 
+
 startupCss
 - 
