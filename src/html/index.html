@@ -14,71 +14,60 @@
         
     </head>
 
-    <!-- I liked how simon did its navbar.
-    Redoing mine to reflect better design. 
-    Also adding a class to most things for easier css implementation. -->
+    <!-- Header and Navbar -->
     <body>
         <header class="header-nav">
-            <nav class="navigation">
-                <a class="logo" href="#">GOAL SECRETARY</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="logo" href="#">GOAL SECRETARY</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <menu class="navigation">
                     <li class="navbar-item">
-                        <a href="home.html">Home |</a>
+                        <a href="home.html">Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="notebook.html"> Notebook |</a>
+                        <a href="notebook.html">Notebook</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="about.html"> About |</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="account.html"> My Account</a>
+                        <a href="account.html">My Account</a>
                     </li>
                 </menu>
             </nav>            
         </header>
-
         
-        
-
-
 
         <style>
-            .status-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                background-color: #cbe4ee;
-                border: 1px solid #f3f3f3;
-                border-radius: 5px;
-                margin-bottom: 20px;
-            }
-            .status-item {
-                font-size: 1.2em;
-            }
-
-            .goal-list {
-                position: relative;
-                display: block;
-                padding: 10px;
-                background-color: #25252556;
-                border: 1px solid #f3f3f3;
-                border-radius: 5px;
-                margin-bottom: 20px;
-                font-family: sans-serif;
-                color: white;
-            }
+            
         </style>
 
         <main>
 
             <div class="status-bar">
-                <div class="status-item" id="tasks">Uncompleted Tasks: 0</div>
+                <div class="status-item" id="tasks">Current Tasks: 0</div>
                 <div class="status-item" id="score">Score: 0</div>
             </div>
-
-            <div class="goal-list">
+            
+            <!-- Structure: 
+                 journal container
+                    menu bar
+                        nav
+                            <a> (title)
+                            button set goal
+                        form (new entry)
+                            input (title)
+                            textarea (field)
+                            button (save)
+                    entry list
+                    entry display
+            -->
+            <!-- Task Manager -->
+            <div class="container-fluid">
                 <ul>
                     <li>Goal 1    |view info|delete|complete|</li>
                     <li>Goal 2    |view info|delete|complete|</li>

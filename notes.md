@@ -23,7 +23,11 @@
 - css animation is done with the @keyframes tag
 
 HTML
-- 
+- Span elements are used to group and style inline elements without changing appearance or structure
 
 startupCss
 - 
+
+Bootstrap
+- The class name can determine what your code does, such as <nav class="navbar navbar-expand-lg navbar-light bg-light">.
+- data-target="#target" specifies what content is affected (my example was a button that collapses/expands text)
