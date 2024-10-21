@@ -17,6 +17,10 @@ menu {
     
 }
 
+#goal-menu {
+    align-items: center;
+}
+
 .status-bar {
     display: flex;
     justify-content: space-between;
@@ -44,9 +48,8 @@ menu {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
 
 }
