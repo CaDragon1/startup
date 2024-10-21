@@ -24,10 +24,64 @@
 
 HTML
 - Span elements are used to group and style inline elements without changing appearance or structure
+- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+- Links:
+<a href="url.com">linktext</a>
+<img src="image.jpg">
 
-startupCss
-- 
+CSS
+- #idname selects named id element
+- [attribute] selects named attribute elements
+- Display properties:
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+- Positions: 
+position: static/relative/absolute/fixed;
+- flexbox (1-dimensional layout):
+.container { 
+    display: flex; // then you can justify-content and align-items
+}
+- Grid (2-dimensional layout):
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
 
 Bootstrap
 - The class name can determine what your code does, such as <nav class="navbar navbar-expand-lg navbar-light bg-light">.
 - data-target="#target" specifies what content is affected (my example was a button that collapses/expands text)
+
+Javascript // remember the fundies
+- 'let' for reassignable vars
+- 'const' for constants
+- Creating objects
+const thingy = {
+    name: 'burlap',
+    amount: 3,
+    function doSomething(param) {
+        return param--;
+    }
+};
+- Make array
+const myArray = ['turkey', 'cranberry sauce', 'pie'];
+console.log(myArray[1]); // console.log is annoying :(
+myArray.push('stuffing');
+- for loops
+for (let i = 0; i < n; i++){
+}
+//there's also "do while" loop on top of a "while" loop, I always forget this
+- Interact with HTML Document Object Model (DOM)
+const element = document.getElementByClassName('status-bar'); //can also do ById()
+element.innerHTML = 'new data';
+element.style.color = 'blue';
+const newDiv = documnent.createElement('div');
+document.body.appendChild(newDiv);
+element.addEventListener('click', myFunction(){
+    console.log('*click*');
+});
