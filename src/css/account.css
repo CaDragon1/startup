@@ -39,6 +39,15 @@ font-size: 14px;
     margin: 5px;
 }
 
+.navbar a {
+    color:white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:rgb(155, 236, 232)
+}
+
 .logo {
     font-size: 20px;
     font-weight: bold;
